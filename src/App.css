@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+
+  background-image: linear-gradient(to bottom right, rgb(155, 155, 196), rgb(48, 70, 106));
 }
 
 .App-logo {
@@ -16,12 +18,12 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,4 +37,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Songformat {
+  display: inline-block;
+  width: 20%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.Selector {
+  height: 25px;
+  vertical-align: middle;
+  font-size: large;
+  
+}
+
+.Imagepad {
+  display: inline-block;
+  height: 10%;
+  width: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  vertical-align: middle;
+  padding-bottom: 2%;
+  padding-right: 2%;
 }
