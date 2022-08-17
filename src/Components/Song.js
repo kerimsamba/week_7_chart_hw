@@ -1,12 +1,16 @@
 import React from "react";
 import ChartList from "./ChartList";
 
-const Song = ({ position, title, artist }) => {
+const Song = ({ position, title, artist, image, audio }) => {
 
     return <li>
-        {position}
-        {title}
-        {artist}
+        <p>{position}</p>
+       <p> {title}</p>
+        <p>{artist}</p>
+        <img src={image} />
+        <audio controls>
+        <source src={audio}></source>
+        </audio>
     </li>
 
 }
